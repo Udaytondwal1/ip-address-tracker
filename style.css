@@ -1,0 +1,179 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden; 
+  overflow-x: hidden; 
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+}
+
+.section-1{
+    height: 40%;
+    width: 100%;
+    background: url(/images/pattern-bg-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-y: hidden; 
+    overflow-x: hidden; 
+}
+
+.section-1 h1{
+    text-align: center;
+    color: white;
+    margin-bottom: 3vh;
+}
+
+.section-1 .search-div{
+    height: 6vh;
+    width: 85vw;
+    margin: auto;
+    margin-bottom: 0px;
+}
+
+.section-1 .search-div input{
+    vertical-align: top;   
+    height: 7vh;
+    width: 70vw;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    padding: 0 4vw;
+    font-weight: 500;
+    font-size: medium;
+    outline: none;
+}
+
+input[type="search"]::-ms-clear {
+    display: none;
+    height: 0;
+    width : 0;
+}
+
+input[type="search"]::-ms-reveal {
+    display: none;
+    height: 0;
+    width : 0;
+}
+
+.section-1 .search-div input:hover{
+    cursor: pointer;
+}
+
+.section-1 .search-div button{
+    height: 7vh;
+    width: 15vw;
+    margin-left: -1.5vw;
+    border: none;
+    background-color: black;
+    border-radius: 0 10px 10px 0;
+    transition: all ease .5s;
+}
+
+.section-1 .search-div button:hover{
+    background-color: hsl(0, 0%, 17%);
+    cursor: pointer;
+}
+
+.mid-section{
+    height: 35vh;
+    width: 85vw;
+    margin: -19vh 7.5vw;
+    border-radius: 15px;
+    background-color: white;
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.mid-section div{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+}
+
+.mid-section div .textf{
+    text-transform: uppercase;
+    color: hsl(0, 0%, 59%);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.mid-section div .outf{
+    text-transform: capitalize;
+    color: black;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.section-2{
+    height: 60%;
+    width: 100%;
+    z-index: 1;
+}
+
+@media only screen and (min-width: 1025px){
+    .section-1{
+        background: url(/images/pattern-bg-desktop.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .section-1 h1{
+        margin-bottom: 5.5vh;
+    }
+    
+    .section-1 .search-div{
+        height: 6vh;
+        width: 38vw;
+        margin: auto;
+        margin-bottom: 0px;
+    }
+    
+    .section-1 .search-div input{
+        vertical-align: top;   
+        height: 7vh;
+        width: 34vw;
+        border: none;
+        border-radius: 10px 0 0 10px;
+        padding: 0 4vw;
+        font-weight: 500;
+        font-size: medium;
+        outline: none;
+    }
+
+    .section-1 .search-div button{
+        height: 7vh;
+        width: 5vw;
+    }
+
+    .mid-section{
+        height: 20vh;
+        width: 85vw;
+        margin: -11vh 7.5vw;
+        border-radius: 15px;
+        background-color: white;
+        position: absolute;
+        z-index: 5;
+        display: flex;
+        flex-direction: row;
+        padding: 10px 0;
+    }
+
+
+
+
+}
+  
