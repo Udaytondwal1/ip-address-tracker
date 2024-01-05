@@ -7,7 +7,7 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
 
 
 
-window.addEventListener('load', (event) => {
+window.addEventListener('load', () => {
     fetch(
       "https://geo.ipify.org/api/v2/country?apiKey=at_EJ1vedab0GLZHuyMYgT3bbjP1z1dq"
     )
@@ -18,8 +18,8 @@ window.addEventListener('load', (event) => {
         //console.log(data);
         document.querySelector(".ipf").innerHTML = data.ip;
         let { location } = data;
-        document.querySelector(".locationf").innerHTML = location.region;
-        document.querySelector(".tzf").innerHTML = location.timezone;
+        document.querySelector(".locationf").innerHTML = location.region + ` ` + location.country;
+        document.querySelector(".tzf").innerHTML = `UTC ` + location.timezone;
         document.querySelector(".ispf").innerHTML = data.isp;
       })
       .catch((error) => {
@@ -46,8 +46,8 @@ L.marker([51.5, -0.09])
           console.log(data);
           document.querySelector(".ipf").innerHTML = data.ip;
           let { location } = data;
-          document.querySelector(".locationf").innerHTML = location.region;
-          document.querySelector(".tzf").innerHTML = location.timezone;
+          document.querySelector(".locationf").innerHTML = location.region + ` ` + location.country;
+          document.querySelector(".tzf").innerHTML = `UTC ` + location.timezone;
           document.querySelector(".ispf").innerHTML = data.isp;
         })
         .catch((error) => {
@@ -65,8 +65,8 @@ L.marker([51.5, -0.09])
         //console.log(data);
         document.querySelector(".ipf").innerHTML = data.ip;
         let { location } = data;
-        document.querySelector(".locationf").innerHTML = location.region;
-        document.querySelector(".tzf").innerHTML = location.timezone;
+        document.querySelector(".locationf").innerHTML = location.region + ` ` + location.country;
+        document.querySelector(".tzf").innerHTML = `UTC ` + location.timezone;
         document.querySelector(".ispf").innerHTML = data.isp;
       })
       .catch((error) => {
