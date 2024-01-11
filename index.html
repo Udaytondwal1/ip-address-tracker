@@ -1,62 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-  
-  <title>Frontend Mentor | IP Address Tracker</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-  
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="main">
-  <div class="section-1">  
-     <h1>IP Address Tracker</h1>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+
+    <title>IP Address Tracker | Frontend Mentor</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="section-1">
+        <h1>IP Address Tracker</h1>
         <div class="search-div">
-           <input type="search" class="inputf" value="" placeholder="Search for any IP address or domain">
-           <button><img src="/images/icon-arrow.svg" alt=""></button>
+          <input
+            type="search"
+            class="inputf"
+            placeholder="Search for any IP address or domain"
+          />
+          <button><img src="/images/icon-arrow.svg" alt="" /></button>
         </div>
-  </div>
-    
-    
-  <div class="mid-section">   
-    <div>
-      <span class="textf">IP Address</span>
-      <span class="outf ipf">--</span>
-    </div>  
-    <div>
-     <span class="textf">Location</span>
-     <span class="outf locationf">--</span>
+      </div>
+
+      <div class="mid-section">
+        <div>
+          <span class="textf">IP Address</span>
+          <span class="outf ip-field">--</span>
+        </div>
+        <div>
+          <span class="textf">Location</span>
+          <span class="outf location-field">--</span>
+        </div>
+        <div>
+          <span class="textf">Timezone</span>
+          <span class="outf tz-field">--</span>
+        </div>
+        <div>
+          <span class="textf">ISP</span>
+          <span class="outf isp-field">--</span>
+        </div>
+      </div>
+
+      <div class="section-2" id="map">
+        <div id="marker"></div>
+      </div>
     </div>
-    <div>
-      <span class="textf">Timezone</span>
-      <span class="outf tzf">--</span>
-    </div>
-    <div>
-      <span class="textf">ISP</span>
-      <span class="outf ispf">--</span>
-    </div>
-  </div>
-    
-    <div class="section-2" id="map">
-      <div id="marker"></div>
-    </div>
-    
-</div>
- 
- <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
- 
- <script src="app.js"></script>
-</body>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+
+    <script src="app.js"></script>
+  </body>
 </html>
