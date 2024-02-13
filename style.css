@@ -116,10 +116,23 @@ input[type="search"]::-ms-reveal {
   font-weight: 700;
 }
 
-.section-2 {
+.section-2{
   height: 60%;
   width: 100%;
   z-index: 1;
+}
+
+.section-2 #map{
+  height: 0%;
+  width: 100%;
+  z-index: 1;
+  /* display: none; */
+}
+
+.section-2 #map2{
+  height: 100%;
+  width: 100%;
+  z-index: 2;
 }
 
 @media only screen and (min-width: 1025px) {
