@@ -46,7 +46,7 @@ Exposing your API Key publicly can lead to other people using it to make request
 ### Links
 
 - Solution URL: [Solution](https://github.com/Udaytondwal1/ip-address-tracker)
-- Live Site URL: [See Live](https://udaytondwal1.github.io/ip-address-tracker/)
+- Live Site URL: [See Live](https://ip-address-tracker-one-sigma.vercel.app/)
 
 ## My process
 
